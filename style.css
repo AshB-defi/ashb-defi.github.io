@@ -1,36 +1,48 @@
 body {
-    box-sizing:border-box;
-    margin: auto 3;
+    font-family: Arial, sans-serif;
 }
 
-.header {
-    display:flex;
-    font-size: 2.0em;
-    background-color: gold;
+#container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "about"
+        "projects"
+        "footer";
+    grid-gap: 10px;
+    padding: 10px;
 }
 
-.side-top {
-    display: flex;
-    font size: 1.0em;
+header {
+    grid-area: header;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
 }
 
-li {
-    padding: 70px;
+nav {
+    grid-area: nav;
+    background-color: #e9ecef;
+    padding: 10px;
+    text-align: center;
 }
 
-.nain-nav {
-    display:flex;
-    list-style: none;
-    font-size: 1.0em;
-    margin:1;
+#about {
+    grid-area: about;
+    background-color: #f8f9fa;
+    padding: 10px;
 }
 
-.about-me-section,
-.gallery-section,
-.contact-section,
-.skills-section,
-.projects,
-.tools {
-    border: 1px black;
-    padding: 3.0rem;
+#projects {
+    grid-area: projects;
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
 }
