@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #d4af37;
 }
 
 #container {
@@ -8,7 +10,9 @@ body {
         "header"
         "nav"
         "about"
-        "projects"
+        "skills"
+        "experience"
+        "education"
         "footer";
     grid-gap: 10px;
     padding: 10px;
@@ -16,33 +20,45 @@ body {
 
 header {
     grid-area: header;
-    background-color: #f8f9fa;
+    background-color: #000;
+    color: #d4af37;
     padding: 10px;
     text-align: center;
 }
 
 nav {
     grid-area: nav;
-    background-color: #e9ecef;
+    background-color: #000;
+    color: #d4af37;
     padding: 10px;
     text-align: center;
 }
 
-#about {
-    grid-area: about;
-    background-color: #f8f9fa;
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+#about, #skills, #experience, #education {
+    background-color: #000;
+    color: #d4af37;
     padding: 10px;
 }
 
-#projects {
-    grid-area: projects;
-    background-color: #e9ecef;
-    padding: 10px;
+h2, h3, h4 {
+    color: #d4af37;
 }
 
 footer {
     grid-area: footer;
-    background-color: #f8f9fa;
+    background-color: #000;
+    color: #d4af37;
     padding: 10px;
     text-align: center;
 }
+new css
