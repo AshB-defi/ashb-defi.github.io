@@ -1,0 +1,36 @@
+body {
+    box-sizing:border-box;
+    margin: auto 3;
+}
+
+.header {
+    display:flex;
+    font-size: 2.0em;
+    background-color: gold;
+}
+
+.side-top {
+    display: flex;
+    font size: 1.0em;
+}
+
+li {
+    padding: 70px;
+}
+
+.nain-nav {
+    display:flex;
+    list-style: none;
+    font-size: 1.0em;
+    margin:1;
+}
+
+.about-me-section,
+.gallery-section,
+.contact-section,
+.skills-section,
+.projects,
+.tools {
+    border: 1px black;
+    padding: 3.0rem;
+}
